@@ -1,0 +1,48 @@
+
+<header class="sticky top-0 bg-white/90 backdrop-blur-xl z-50 border-b border-gray-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="text-2xl font-semibold tracking-tight text-gray-900">
+      Agarwal Sanganeria & Co.
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-600">
+      <a href="about.html" class="nav-link hover:text-black transition">About</a>
+      <a href="services.html" class="nav-link hover:text-black transition">Services</a>
+      <a href="ai.html" class="nav-link hover:text-black transition">AI</a>
+      <a href="forensic.html" class="nav-link hover:text-black transition">Forensic</a>
+      <a href="sector.html" class="nav-link hover:text-black transition">Sectors</a>
+      <a href="leadership.html" class="nav-link hover:text-black transition">Leadership</a>
+      <a href="insights.html" class="nav-link hover:text-black transition">Insights</a>
+      <a href="contact.html" class="nav-link hover:text-black transition">Contact</a>
+    </nav>
+
+    <button id="menuBtn" class="lg:hidden text-2xl text-gray-700">☰</button>
+  </div>
+
+  <div id="mobileMenu" class="hidden lg:hidden px-6 pb-6 space-y-4 text-sm font-medium text-gray-700 border-t border-gray-100 bg-white">
+    <a href="about.html" class="block">About</a>
+    <a href="services.html" class="block">Services</a>
+    <a href="ai.html" class="block">AI</a>
+    <a href="forensic.html" class="block">Forensic</a>
+    <a href="sector.html" class="block">Sectors</a>
+    <a href="leadership.html" class="block">Leadership</a>
+    <a href="insights.html" class="block">Insights</a>
+    <a href="contact.html" class="block">Contact</a>
+  </div>
+</header>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+  if(btn){ btn.addEventListener("click", function(){ menu.classList.toggle("hidden"); }); }
+
+  const links = document.querySelectorAll(".nav-link");
+  const current = window.location.pathname.split("/").pop();
+  links.forEach(link => {
+    if(link.getAttribute("href") === current){
+      link.classList.add("text-black","font-semibold");
+    }
+  });
+});
+</script>
