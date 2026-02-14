@@ -5,38 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Leadership | ASAC</title>
 
-<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
 }
-.section {
-  padding: 4rem 0;
-}
 </style>
 
 </head>
 
-<body class="bg-white text-gray-900">
+<body class="bg-gray-50 text-gray-900">
 
 <div id="header"></div>
 
 <!-- Banner -->
 <section class="relative h-56 md:h-72 lg:h-80 bg-cover bg-center"
 style="background-image:url('https://images.unsplash.com/photo-1507679799987-c73779587ccf');">
-<div class="absolute inset-0 bg-black/50 flex items-center justify-center">
-<h1 class="text-white text-3xl md:text-4xl font-semibold">Our Leadership</h1>
-</div>
+  <div class="absolute inset-0 bg-black/50 flex items-center justify-center">
+    <h1 class="text-white text-3xl md:text-4xl font-semibold">Our Leadership</h1>
+  </div>
 </section>
 
-<section class="section max-w-7xl mx-auto px-6">
+<!-- Leadership Grid -->
+<section class="py-16">
+<div class="max-w-7xl mx-auto px-6">
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
 <!-- 1 -->
-<div class="text-center p-6 shadow-sm rounded-xl hover:shadow-md transition bg-white">
+<div class="bg-white p-6 rounded-xl shadow-sm text-center">
 <img src="images/pawan-agarwal.jpg" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
 <h3 class="font-semibold text-lg">CA Pawan K. Agarwal</h3>
 <p class="mt-3 text-sm text-gray-600 leading-relaxed">
@@ -45,77 +43,10 @@ Managing Partner with deep expertise in direct taxation, corporate advisory and 
 </div>
 
 <!-- 2 -->
-<div class="text-center p-6 shadow-sm rounded-xl hover:shadow-md transition bg-white">
+<div class="bg-white p-6 rounded-xl shadow-sm text-center">
 <img src="images/saket-sanganeria.jpg" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
 <h3 class="font-semibold text-lg">CA Saket Sanganeria</h3>
 <p class="mt-3 text-sm text-gray-600 leading-relaxed">
 Leads Internal Audit, Risk Advisory and AI-Based Intelligent Transformation initiatives. Focuses on governance digitisation, forensic analytics and regulatory strategy across listed and regulated entities.
 </p>
 </div>
-
-<!-- 3 -->
-<div class="text-center p-6 shadow-sm rounded-xl hover:shadow-md transition bg-white">
-<img src="images/bina-rathi.jpg" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
-<h3 class="font-semibold text-lg">CA Bina Rathi</h3>
-<p class="mt-3 text-sm text-gray-600 leading-relaxed">
-Specialises in statutory audits and tax consultancy for manufacturing enterprises and financial intermediaries. Advises on compliance architecture and regulatory alignment.
-</p>
-</div>
-
-<!-- 4 -->
-<div class="text-center p-6 shadow-sm rounded-xl hover:shadow-md transition bg-white">
-<img src="images/pawan-agarwal2.jpg" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
-<h3 class="font-semibold text-lg">CA Pawan Agarwal</h3>
-<p class="mt-3 text-sm text-gray-600 leading-relaxed">
-Executive Partner specialising in financial reporting, internal audit and enterprise risk frameworks. Supports complex organisations in strengthening internal controls and operational governance.
-</p>
-</div>
-
-<!-- 5 -->
-<div class="text-center p-6 shadow-sm rounded-xl hover:shadow-md transition bg-white">
-<img src="images/sweta-agarwal.jpg" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
-<h3 class="font-semibold text-lg">CA Sweta Agarwal</h3>
-<p class="mt-3 text-sm text-gray-600 leading-relaxed">
-Advises on statutory audits, GST compliance and financial reporting for mid-sized and large enterprises. Supports structured compliance frameworks across diverse sectors.
-</p>
-</div>
-
-<!-- 6 -->
-<div class="text-center p-6 shadow-sm rounded-xl hover:shadow-md transition bg-white">
-<img src="images/kishor-jain.jpg" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
-<h3 class="font-semibold text-lg">CA Kishor Jain</h3>
-<p class="mt-3 text-sm text-gray-600 leading-relaxed">
-Specialises in GST structuring, MSME advisory and financial discipline frameworks. Supports enterprises transitioning towards institutional governance standards.
-</p>
-</div>
-
-<!-- 7 -->
-<div class="text-center p-6 shadow-sm rounded-xl hover:shadow-md transition bg-white">
-<img src="images/ankita-kumari.jpg" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
-<h3 class="font-semibold text-lg">CA Ankita Kumari</h3>
-<p class="mt-3 text-sm text-gray-600 leading-relaxed">
-Focuses on banking audits, regulatory reviews and compliance assessments. Supports financial institutions in strengthening risk monitoring systems.
-</p>
-</div>
-
-<!-- 8 -->
-<div class="text-center p-6 shadow-sm rounded-xl hover:shadow-md transition bg-white">
-<img src="images/rahul-rungta.jpg" class="rounded-full mx-auto mb-4 w-32 h-32 object-cover">
-<h3 class="font-semibold text-lg">CA Rahul Rungta</h3>
-<p class="mt-3 text-sm text-gray-600 leading-relaxed">
-Focuses on digital strategy and enterprise transformation. Works at the intersection of finance, analytics and brand positioning for growth-oriented businesses.
-</p>
-</div>
-
-</div>
-</section>
-
-<div id="footer"></div>
-
-<script>
-fetch("header.html").then(r=>r.text()).then(d=>document.getElementById("header").innerHTML=d);
-fetch("footer.html").then(r=>r.text()).then(d=>document.getElementById("footer").innerHTML=d);
-</script>
-
-</body>
-</html>
